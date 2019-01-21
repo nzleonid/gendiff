@@ -1,14 +1,14 @@
 #!/usr/bin/env node
+import program from 'commander';
 import { version } from '../../package.json';
-
-const program = require('commander');
+import genDiff from '..';
 
 program
   .description('Compares two configuration files and shows a difference.')
   .version(version)
   .option('-f, --format [type]', 'Output format')
-  .arguments('<firstConfig> <secondConfig>');
-
+  .arguments('<firstConfig> <secondConfig>')
+  .action((firstConfig, secondConfig) => {
+    console.log(genDiff(firstConfig, secondConfig));
+  });
 program.parse(process.argv);
-
-console.log('stuff');
