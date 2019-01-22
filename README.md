@@ -4,5 +4,7 @@
 [![Build Status](https://travis-ci.org/nzleonid/project-lvl2-s401.svg?branch=master)](https://travis-ci.org/nzleonid/project-lvl2-s401)
 ## help
 [![asciicast](https://asciinema.org/a/JF5Xb6mbyqRStBUx1MQeUefKe.svg)](https://asciinema.org/a/JF5Xb6mbyqRStBUx1MQeUefKe)
-## check
+## check Json
 [![asciicast](https://asciinema.org/a/fEOEugbyjBXxshlJLhhJXrl8s.svg)](https://asciinema.org/a/fEOEugbyjBXxshlJLhhJXrl8s)
+## check Yml
+[![asciicast](https://asciinema.org/a/jzxrt76STKqCYSQNXkYcJkU89.svg)](https://asciinema.org/a/jzxrt76STKqCYSQNXkYcJkU89)
