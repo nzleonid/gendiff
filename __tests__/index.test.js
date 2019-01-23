@@ -1,7 +1,7 @@
 import fs from 'fs';
 import genDiff from '../src';
 
-const extensionList = ['.json', '.yml'];
+const extensionList = ['.json', '.yml', '.ini'];
 const dir = `${__dirname}/__fixtures__`;
 
 extensionList.forEach(extension => test(`genDiff test ${extension}`, () => {

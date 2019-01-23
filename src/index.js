@@ -3,12 +3,12 @@ import { has, union } from 'lodash';
 import { extname } from 'path';
 import parsers from './parsers';
 
-const genDiff = (file1, file2) => {
-  const extension1 = parsers(extname(file1));
-  const extension2 = parsers(extname(file2));
+const genDiff = (filename1, filename2) => {
+  const extension1 = parsers(extname(filename1));
+  const extension2 = parsers(extname(filename2));
 
-  const pars1 = extension1(fs.readFileSync(file1, 'utf-8'));
-  const pars2 = extension2(fs.readFileSync(file2, 'utf-8'));
+  const pars1 = extension1(fs.readFileSync(filename1, 'utf-8'));
+  const pars2 = extension2(fs.readFileSync(filename2, 'utf-8'));
 
   const keys = union(Object.keys(pars1), Object.keys(pars2));
 
