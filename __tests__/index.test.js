@@ -11,3 +11,11 @@ extensionList.forEach(extension => test(`genDiff test ${extension}`, () => {
   const result = genDiff(file1, file2);
   expect(result).toBe(expected);
 }));
+
+extensionList.forEach(extension => test(`genDiff test tree ${extension}`, () => {
+  const file1 = `${dir}/before_tree${extension}`;
+  const file2 = `${dir}/after_tree${extension}`;
+  const expected = fs.readFileSync(`${dir}/test_tree.txt`, 'utf-8').trim();
+  const result = genDiff(file1, file2);
+  expect(result).toBe(expected);
+}));
