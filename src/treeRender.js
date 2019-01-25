@@ -29,7 +29,7 @@ const render = (ast, depth = 0) => {
       case 'added':
         return `  + ${key}: ${stringify(newValue, depth + 1)}`;
       default:
-        return `Error: ${type} undefined`;
+        throw new Error(`${type} undefined`);
     }
   });
   const indent = '    '.repeat(depth);
