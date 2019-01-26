@@ -2,7 +2,7 @@ import fs from 'fs';
 import genDiff from '../src';
 
 const extensionList = ['.json', '.yml', '.ini'];
-const outputFormat = ['tree', 'plain'];
+const outputFormat = ['tree', 'plain', 'json'];
 const dir = `${__dirname}/__fixtures__`;
 
 extensionList.forEach((extension) => {
