@@ -2,7 +2,7 @@ import fs from 'fs';
 import { extname } from 'path';
 import parsers from './parsers';
 import makeAst from './ast';
-import getFormatRender from './renderers/formatSelection';
+import getFormatRender from './renderers';
 
 const genDiff = (filename1, filename2, outputFormat) => {
   const getExtension1 = parsers(extname(filename1));
